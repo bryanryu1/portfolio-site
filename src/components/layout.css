@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em georgia, serif, sans-serif;
+  font: 112.5%/1.45em 'Open Sans', sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -10,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -81,12 +83,12 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 1.1;
+  text-align: center;
 }
 mark {
   background-color: #ff0;
@@ -127,7 +129,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace;
+  font-family: 'Open Sans';
   font-size: 1em;
 }
 figure {
@@ -260,8 +262,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -277,8 +278,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -294,8 +294,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -311,8 +310,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -328,8 +326,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans';
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -397,7 +394,8 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: .3rem;
+  text-align: center;
 }
 pre {
   margin-left: 0;
@@ -496,6 +494,7 @@ ol li {
 }
 ul li {
   padding-left: 0;
+  list-style-type: none;
 }
 li > ol {
   margin-left: 1.45rem;
@@ -567,8 +566,7 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: "SFMono-Regular", Consolas, "Roboto Mono", "Droid Sans Mono",
-    "Liberation Mono", Menlo, Courier, monospace;
+  font-family: 'Open Sans';
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -595,3 +593,89 @@ pre tt:after {
     font-size: 100%;
   }
 }
+
+.home-text{
+  color: white ;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.header-item{
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  padding-left:  .5rem;
+}
+
+.home{
+    display: grid;
+    padding-top: 10rem;
+    min-height: 40rem;
+    background-image: url('../images/skyline.jpeg');
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: .9;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.aboutgrid{
+  display:grid;
+  grid-template-columns: .85fr 1fr;
+  min-height: 25rem;
+}
+
+.headshot{
+  text-align: center;
+  padding-top: .5rem;
+  padding-left: 5rem;
+}
+
+.bio{
+  text-align: left;
+  padding-right: 7rem;
+  padding-top: 1.3rem;
+}
+
+.contact{
+  padding-top: 5rem;
+  min-height: 20rem;
+}
+
+.skillsGrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 3rem;
+}
+
+/* .first-skill-area{
+  display: flex
+} */
+
+.skillHead{
+  text-align: center;
+}
+
+.skills{
+  margin-left: 7rem;
+  padding-top: 1.5rem;
+}
+
+.proficiency{
+  font-weight: bold;
+}
+
+.skillWrap{
+  display: inline-flex;
+  margin-top: 2rem;
+  background-color: #9DD2FF;
+  min-width: 25rem;
+  margin-bottom: 2rem;
+}
+
+.projectHead{
+  text-align: center;
+}
+

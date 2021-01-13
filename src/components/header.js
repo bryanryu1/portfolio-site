@@ -1,34 +1,35 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import HeaderLink from "./header-link"
 
-const Header = ({ siteTitle }) => (
-  <header
+const Header = () => (
+  <div
     style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
+      background: `#1E7CD9`,
+      padding: `1.2rem 10%`,
+      display: "flex",
+      width: "100%",
+      justifyContent: "space-between",
+      position: 'fixed',
+      zIndex: '99',
+      alignItems: 'center',
+      
     }}
   >
-    <div
+    <Link
+      to="/"
       style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        color: `white`,
+        textDecoration: `none`,
+        fontSize: "40px",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+      Bryan Ryu
+    </Link>
+
+    <HeaderLink />
+  </div>
 )
 
 Header.propTypes = {
