@@ -21,7 +21,7 @@ module.exports = {
         name: `Bryan Ryu`,
         short_name: `BR`,
         start_url: `/`,
-        background_color: `#ffffff`,
+        background_color: `#E9E9E9`,
         theme_color: `#1E7CD9`,
         display: `minimal-ui`,
         icon: `src/images/B.png`, // This path is relative to the root of the site.

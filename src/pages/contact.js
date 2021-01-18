@@ -18,7 +18,7 @@ const Contact = () => (
       con·tact
     </h1>
     <p
-    style={{paddingTop: '1.5rem', paddingBottom: '2.5rem'}}>
+    style={{paddingTop: '1.5rem', paddingBottom: '2.5rem', textAlign: 'center'}}>
       I'd love to link!
       <br></br>
       You can contact me at any of the channels below.

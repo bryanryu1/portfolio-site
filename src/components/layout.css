@@ -53,6 +53,8 @@ template {
   display: none;
 }
 a {
+  text-decoration: none;
+  color: black;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
 }
@@ -83,7 +85,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
@@ -129,7 +131,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
 }
 figure {
@@ -262,7 +264,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -278,7 +280,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -294,7 +296,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -310,7 +312,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -326,7 +328,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -566,7 +568,7 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -623,43 +625,40 @@ pre tt:after {
 }
 .aboutgrid{
   display:grid;
-  grid-template-columns: .85fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   min-height: 25rem;
 }
 
 .headshot{
   text-align: center;
-  padding-top: .5rem;
-  padding-left: 5rem;
 }
 
 .bio{
-  text-align: left;
   padding-right: 7rem;
   padding-top: 1.3rem;
 }
 
+.bioText{
+  text-align: justify;
+}
+
 .contact{
-  padding-top: 5rem;
+  padding-top: 10rem;
   min-height: 20rem;
 }
 
 .skillsGrid{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding-top: 3rem;
 }
-
-/* .first-skill-area{
-  display: flex
-} */
 
 .skillHead{
   text-align: center;
 }
 
 .skills{
-  margin-left: 7rem;
+  margin-left: 5rem;
   padding-top: 1.5rem;
 }
 
@@ -669,7 +668,7 @@ pre tt:after {
 
 .skillWrap{
   display: inline-flex;
-  margin-top: 2rem;
+  margin-top: 2rem; 
   background-color: #9DD2FF;
   min-width: 25rem;
   margin-bottom: 2rem;
@@ -679,3 +678,21 @@ pre tt:after {
   text-align: center;
 }
 
+.projectWrap{
+  margin-top: 3.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px); 
+  justify-content: center;
+  gap: 30px;
+}
+
+.project{
+  border: 1px solid black;
+  background-color: #9DD2FF;
+
+}
+
+.postDesc{
+  text-decoration: none;
+  text-align: justify;
+}

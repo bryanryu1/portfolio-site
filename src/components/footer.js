@@ -13,7 +13,7 @@ const Footer = () => (
     Thanks for taking the time to check out my site!
     <div>Made with love by</div>
     <div>@bryan.ryu</div>
-   
+    <div>Est. 2021</div>
   </div>
 )
 

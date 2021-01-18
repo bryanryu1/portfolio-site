@@ -18,7 +18,7 @@ const About = () => (
         <Headshot />
       </div>
       <div className="bio">
-        <p>
+        <p className='bioText'>
           I am a recent college graduate from Rutgers University, New Brunswick
           where I studied Philosophy and Psychology. Coding was something that I
           always thought was fascinating so I decided to enroll in FullStack
@@ -26,7 +26,7 @@ const About = () => (
           but now I love it and I couldn’t be happier.
         </p>
         <br></br>
-        <p>
+        <p className='bioText'>
           When I'm not at my computer working on code, I still like to spend my
           time making things. I am passionate about creating and
           learning/experimenting with new techniques. I think that the hobbies

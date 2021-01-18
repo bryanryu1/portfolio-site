@@ -1,5 +1,9 @@
 import React from "react"
 
+import Cereal from "../components/cereal"
+import Water from "../components/water"
+import Cooked from "../components/cooked"
+
 const Portfolio = () => (
   <div
     style={{
@@ -29,11 +33,7 @@ const Portfolio = () => (
               <li>Redux</li>
               <li>Express</li>
             </ul>
-            <ul
-              style={{
-                // marginLeft: "10rem",
-              }}
-            >
+            <ul>
               <li>HTML5</li>
               <li>CSS</li>
               <li>Git</li>
@@ -62,7 +62,13 @@ const Portfolio = () => (
               href="https://github.com/Rice-Krispy-Grace-Shopper/Grace-Shopper"
               rel="noreferrer"
             >
-              HELLO
+              <div className='post'>
+              <Cereal />
+              <h4 className="postTitle">Cereal Emporium</h4>
+              <p className="postDesc">
+                Cereal Emporium is an e-commerce site that doesn't actually sell any cereal...
+              </p>
+              </div>
             </a>
           </div>
 
@@ -71,7 +77,13 @@ const Portfolio = () => (
               target="_blank"
               href="https://github.com/bryanryu1/WaterApp"
               rel="noreferrer"
-            >THIS</a>
+            >
+              <Water />
+              <h4 className="postTitle">WaterMon</h4>
+              <p className="postDesc">
+                Watermon is a React Native mobile application which a user can track the water they intake throughout the day.
+              </p>
+            </a>
           </div>
 
           <div className="project">
@@ -79,7 +91,13 @@ const Portfolio = () => (
               target="_blank"
               href="https://github.com/Do-Jest-While-True/cooked"
               rel="noreferrer"
-            >IS TEST</a>
+            >
+              <Cooked />
+              <h4 className="postTitle">Cook'd</h4>
+              <p className="postDesc">
+                Cook'd is a mobile social media application focused on recipes. Built using React Native.
+              </p>
+            </a>
           </div>
         </div>
       </div>
