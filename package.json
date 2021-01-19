@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "description": "A portfolio website for Bryan Ryu",
+  "description": "portfolio website for bryan ryu",
   "version": "0.1.0",
   "author": "Bryan Ryu <bryanryu1@gmail.com>",
   "dependencies": {
