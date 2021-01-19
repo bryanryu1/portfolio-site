@@ -84,7 +84,6 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: inherit;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
@@ -596,6 +595,10 @@ pre tt:after {
   }
 }
 
+.titles{
+  color: #1E7CD9;
+}
+
 .home-text{
   color: white ;
   text-decoration: none;
@@ -627,6 +630,7 @@ pre tt:after {
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   min-height: 25rem;
+  padding-bottom: 15rem;
 }
 
 .headshot{
@@ -695,4 +699,17 @@ pre tt:after {
 .postDesc{
   text-decoration: none;
   text-align: justify;
+}
+
+.contactText{
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.contactLinks{
+  justify-content: space-evenly;
+  display: flex;
+  align-Items: center;
+  padding-Bottom: 10rem;
 }
