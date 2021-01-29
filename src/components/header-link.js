@@ -2,13 +2,8 @@ import { Link } from "gatsby"
 import React from "react"
 
 const HeaderLink = () => (
-  <div
-    style={{
-      display: "flex",
-      justifyContent: "space-between",
-      width: "40%",
-      justifySelf: "flex-end",
-    }}
+  <nav
+    className='nav'
   >
     <Link
       to='#'
@@ -34,7 +29,7 @@ const HeaderLink = () => (
     >
       contact
     </Link>
-  </div>
+  </nav>
 )
 
 export default HeaderLink

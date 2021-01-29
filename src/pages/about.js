@@ -1,5 +1,5 @@
 import React from "react"
-import Headshot from "../components/headshot"
+import Headshot from "../images/headshot"
 import Fade from "react-reveal/Fade"
 
 const About = () => (

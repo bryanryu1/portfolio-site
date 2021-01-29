@@ -1,14 +1,15 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-import Cereal from "../components/cereal"
-import Water from "../components/water"
-import Cooked from "../components/cooked"
+import Cereal from "../images/cereal"
+import Water from "../images/water"
+import Cooked from "../images/cooked"
 
 const Portfolio = () => (
   <div
     style={{
       minHeight: "20rem",
+      paddingTop: '7rem',
     }}
   >
     <Fade top>

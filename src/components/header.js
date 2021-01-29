@@ -1,36 +1,29 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-import React from "react"
+import React, {useState} from "react"
 import HeaderLink from "./header-link"
 
-const Header = () => (
-  <div
-    style={{
-      background: `#1E7CD9`,
-      padding: `1.2rem 10%`,
-      display: "flex",
-      width: "100%",
-      justifyContent: "space-between",
-      position: 'fixed',
-      zIndex: '99',
-      alignItems: 'center',
-      
-    }}
-  >
-    <Link
-      to="/"
-      style={{
-        color: `white`,
-        textDecoration: `none`,
-        fontSize: "40px",
-      }}
-    >
-      Bryan Ryu
-    </Link>
+const Header = ({}) => {
+  const [isNavVisible, setIsNavVisible] = useState(true);
 
-    <HeaderLink />
-  </div>
-)
+  const toggleNav = () => {
+    setIsNavVisible(!isNavVisible)
+  }
+
+  return (
+    <header className="header-bar">
+      <a href="#" className="header-title">
+        Bryan Ryu
+      </a>
+
+      {isNavVisible && (<HeaderLink />)}
+
+      <button onClick={toggleNav} className='burger'>
+        🍔
+      </button>
+    </header>
+  )
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,

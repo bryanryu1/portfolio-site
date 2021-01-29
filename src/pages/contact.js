@@ -1,15 +1,14 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-import Image from "../components/image"
-import LinkedIn from "../components/linkedIn"
-import Gmail from "../components/gmail"
+import Image from "../images/image"
+import LinkedIn from "../images/linkedIn"
+import Gmail from "../images/gmail"
 
 const Contact = () => (
   <div
     style={{
       minHeight: "20rem",
-      paddingTop: "2rem",
       paddingBottom: "3rem",
     }}
   >

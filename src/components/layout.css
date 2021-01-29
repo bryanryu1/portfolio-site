@@ -599,23 +599,64 @@ pre tt:after {
   color: #1E7CD9;
 }
 
-.home-text{
-  color: white ;
+/* Header Styling */
+
+.header-bar{
+  background: #1E7CD9;
+  padding: 1.2rem 10%;
+  display: grid;
+  grid-template-areas: 'header-title nav';
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+}
+
+.header-title{
+  color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-size: 40px;
+  grid-area: header-title;
+}
+
+.nav{
+  display: grid;
+  grid-area: nav;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-items: center;
+  /* padding-left: 2rem; */
 }
 
 .header-item{
   color: white;
   font-size: 24px;
   text-decoration: none;
-  padding-left:  .5rem;
+  padding-left: .5rem;
+}
+
+.burger{
+  display: none;
+  grid-area: burger;
+  margin: 0 20px 0 0;
+  padding: 0;
+  justify-self: end;
+  font-size: 40px;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Home Styling */
+.home-text{
+color: white ;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .home{
     display: grid;
     padding-top: 10rem;
-    min-height: 40rem;
+    min-height: 45rem;
     background-image: url('../images/skyline.jpeg');
     background-position: center;
     height: 100%;
@@ -626,11 +667,13 @@ pre tt:after {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* About Styling */
 .aboutgrid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   min-height: 25rem;
-  padding-bottom: 15rem;
+  padding-bottom: 10rem;
 }
 
 .headshot{
@@ -646,15 +689,12 @@ pre tt:after {
   text-align: justify;
 }
 
-.contact{
-  padding-top: 10rem;
-  min-height: 20rem;
-}
-
+/* Portfolio Styling */
 .skillsGrid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding-top: 3rem;
+  padding-bottom: 10rem;
 }
 
 .skillHead{
@@ -678,6 +718,11 @@ pre tt:after {
   margin-bottom: 2rem;
 }
 
+.skillWrap:hover{
+  background-color: #1E7CD9;
+  transform:scale(1.02)
+}
+
 .projectHead{
   text-align: center;
 }
@@ -691,14 +736,24 @@ pre tt:after {
 }
 
 .project{
-  border: 1px solid black;
   background-color: #9DD2FF;
+  transition: .3s;
+}
 
+.project:hover {
+  background-color: #1E7CD9;
+  transform:scale(1.02)
 }
 
 .postDesc{
   text-decoration: none;
   text-align: justify;
+}
+
+/* Contact Styling */
+.contact{
+  padding-top: 7rem;
+  min-height: 20rem;
 }
 
 .contactText{
@@ -712,4 +767,56 @@ pre tt:after {
   display: flex;
   align-Items: center;
   padding-Bottom: 10rem;
+}
+
+.active{
+  color: black;
+}
+
+/* For mobile phones: */
+@media (max-width: 768px) {
+  .header-bar{
+    grid-template-areas: 'header-title burger';
+  }
+  .nav{
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: none;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-items: center;
+  }
+  .burger{
+    display: inline;
+  }
+
+  .skillWrap{
+    display: inline-flex;
+    margin-top: 2rem; 
+    background-color: #9DD2FF;
+    /* min-width: 25rem; */
+    margin-bottom: 2rem;
+  }
+
+  .skills{
+    /* margin-left: 5rem; */
+    padding-top: 1.5rem;
+  }
+  
+}
+
+/* For iPad/Other Tablet */
+@media only screen and (max-width: 1000px) {
+  .skillWrap{
+    display: inline-flex;
+    margin-top: 2rem; 
+    background-color: #9DD2FF;
+    /* min-width: 25rem; */
+    margin-bottom: 2rem;
+  }
+
+  .skills{
+    /* margin-left: 5rem; */
+    padding-top: 1.5rem;
+  }
+  
 }
