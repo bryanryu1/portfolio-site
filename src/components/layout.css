@@ -603,7 +603,8 @@ pre tt:after {
 
 .header-bar{
   background: #1E7CD9;
-  padding: 1.2rem 10%;
+  padding: 1.2rem;
+  max-height: 70px;
   display: grid;
   grid-template-areas: 'header-title nav';
   position: fixed;
@@ -613,9 +614,11 @@ pre tt:after {
 
 .header-title{
   color: white;
+  grid-area: header-title;
   text-decoration: none;
   font-size: 40px;
   grid-area: header-title;
+  align-self: center;
 }
 
 .nav{
@@ -624,14 +627,13 @@ pre tt:after {
   grid-template-columns: repeat(4, auto);
   align-items: center;
   justify-items: center;
-  /* padding-left: 2rem; */
 }
 
 .header-item{
   color: white;
   font-size: 24px;
   text-decoration: none;
-  padding-left: .5rem;
+  /* padding-left: .5rem; */
 }
 
 .burger{
@@ -774,9 +776,9 @@ color: white ;
 }
 
 /* For mobile phones: */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .header-bar{
-    grid-template-areas: 'header-title burger';
+    grid-template-areas: 'header-title burger' 'nav nav';
   }
   .nav{
     grid-template-rows: repeat(4, auto);
@@ -784,24 +786,38 @@ color: white ;
     grid-row-gap: 20px;
     align-items: center;
     justify-items: center;
+
+    padding: 30px 0 30px;
+    margin-top: 2rem;
+    background: rgba(40, 44, 47, 0.95);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
   .burger{
     display: inline;
+  }
+
+  .home{
+    min-height: 50rem;
   }
 
   .skillWrap{
     display: inline-flex;
     margin-top: 2rem; 
     background-color: #9DD2FF;
-    /* min-width: 25rem; */
+    min-width: 15rem;
     margin-bottom: 2rem;
   }
 
   .skills{
-    /* margin-left: 5rem; */
+    margin-left: 4rem;
     padding-top: 1.5rem;
   }
   
+  html {
+    font-size: 100%;
+  }
 }
 
 /* For iPad/Other Tablet */
