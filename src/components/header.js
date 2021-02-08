@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React, {useState} from "react"
 import HeaderLink from "./header-link"
+import { IoMenu } from 'react-icons/io5'
 
 const Header = ({}) => {
   const [isNavVisible, setIsNavVisible] = useState(true);
@@ -19,7 +19,7 @@ const Header = ({}) => {
       {isNavVisible && (<HeaderLink />)}
 
       <button onClick={toggleNav} className='burger'>
-        🍔
+        <IoMenu color='white' size={45}/>
       </button>
     </header>
   )
