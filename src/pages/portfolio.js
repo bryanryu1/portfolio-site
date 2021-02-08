@@ -64,7 +64,7 @@ const Portfolio = () => (
             <div className="project">
               <a
                 target="_blank"
-                href="https://github.com/Rice-Krispy-Grace-Shopper/Grace-Shopper"
+                href="https://cereal-grace-shopper.herokuapp.com/products"
                 rel="noreferrer"
               >
                 <div className="post">
