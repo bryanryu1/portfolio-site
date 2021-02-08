@@ -6,12 +6,7 @@ import Water from "../images/water"
 import Cooked from "../images/cooked"
 
 const Portfolio = () => (
-  <div
-    style={{
-      minHeight: "20rem",
-      paddingTop: '7rem',
-    }}
-  >
+  <div className="portfolioDiv">
     <Fade top>
       <h1
         style={{

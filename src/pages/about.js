@@ -5,15 +5,7 @@ import Fade from "react-reveal/Fade"
 const About = () => (
   <div>
     <Fade top>
-      <h1
-        style={{
-          paddingTop: "7rem",
-          paddingBottom: "4rem",
-        }}
-        className="titles"
-      >
-        a·bout me
-      </h1>
+      <h1 className="titles">a·bout me</h1>
     </Fade>
     <Fade>
       <div className="aboutgrid">
