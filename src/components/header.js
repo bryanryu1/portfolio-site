@@ -1,13 +1,32 @@
 import PropTypes from "prop-types"
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import HeaderLink from "./header-link"
 import { IoMenu } from 'react-icons/io5'
 
 const Header = ({}) => {
-  const [isNavVisible, setIsNavVisible] = useState(true);
+  const [isNavVisible, setNavVisibility] = useState(false)
+  const [isSmallScreen, setIsSmallScreen] = useState(false)
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(max-width: 768px)")
+    mediaQuery.addListener(handleMediaQueryChange)
+    handleMediaQueryChange(mediaQuery)
+
+    return () => {
+      mediaQuery.removeListener(handleMediaQueryChange)
+    }
+  }, [])
+
+  const handleMediaQueryChange = mediaQuery => {
+    if (mediaQuery.matches) {
+      setIsSmallScreen(true)
+    } else {
+      setIsSmallScreen(false)
+    }
+  };
 
   const toggleNav = () => {
-    setIsNavVisible(!isNavVisible)
+    setNavVisibility(!isNavVisible)
   }
 
   return (
@@ -16,7 +35,7 @@ const Header = ({}) => {
         Bryan Ryu
       </a>
 
-      {isNavVisible && (<HeaderLink />)}
+      {(!isSmallScreen || isNavVisible) && (<HeaderLink />)}
 
       <button onClick={toggleNav} className='burger'>
         <IoMenu color='white' size={45}/>
