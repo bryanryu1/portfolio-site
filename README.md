@@ -6,6 +6,8 @@ Welcome to my portfolio site repository. This website is built using Gatsby with
   - about
   - portfolio
   - contact
+  
+This website is mobile responsive and has a separate header menu/styling displayed when viewed on a smaller screen. 
 
 # Upcoming Features
 
