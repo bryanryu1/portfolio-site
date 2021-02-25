@@ -25,31 +25,33 @@ const Portfolio = () => (
         </Fade>
         <Fade>
           <div className="skills">
-            <div className="proficiency">Proficient:</div>
+            <div className="proficiency">Front-End:</div>
             <div className="skillWrap">
               <ul>
                 <li>Javascript</li>
                 <li>React</li>
                 <li>React Native</li>
                 <li>Redux</li>
-                <li>Express</li>
+                <li>Thunk</li>
               </ul>
               <ul>
                 <li>HTML5</li>
                 <li>CSS</li>
-                <li>Git</li>
-                <li>Node.js</li>
-                <li>Sequelize</li>
               </ul>
             </div>
-            <div className="proficiency">Knowledgeable:</div>
+            <div className="proficiency">Back-End:</div>
             <div className="skillWrap">
               <ul>
                 <li>Ruby</li>
-                <li>Gatsby</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>PostgreSQL</li>
+                <li>Sequelize</li>
+              </ul>
+              <ul>
+                <li>Git</li>
                 <li>Mocha</li>
                 <li>Chai</li>
-                <li>Jasmine</li>
               </ul>
             </div>
           </div>
