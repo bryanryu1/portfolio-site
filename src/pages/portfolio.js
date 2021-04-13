@@ -42,13 +42,15 @@ const Portfolio = () => (
             <div className="proficiency">Back-End:</div>
             <div className="skillWrap">
               <ul>
+                <li>Python3</li>
                 <li>Ruby</li>
                 <li>Node.js</li>
                 <li>Express</li>
-                <li>PostgreSQL</li>
                 <li>Sequelize</li>
               </ul>
               <ul>
+                <li>AWS (Fundamental)</li>
+                <li>PostgreSQL</li>
                 <li>Git</li>
                 <li>Mocha</li>
                 <li>Chai</li>
