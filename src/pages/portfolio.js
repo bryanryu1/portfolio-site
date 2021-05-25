@@ -5,6 +5,7 @@ import Cereal from "../images/cereal"
 import Water from "../images/water"
 import Cooked from "../images/cooked"
 
+
 const Portfolio = () => (
   <div className="portfolioDiv">
     <Fade top>

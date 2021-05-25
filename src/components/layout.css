@@ -648,6 +648,7 @@ pre tt:after {
   outline: none;
 }
 
+
 /* Home Styling */
 .home-text{
 color: white ;
@@ -661,8 +662,6 @@ color: white ;
     min-height: 45rem;
     background-image: url('../images/skyline.jpeg');
     background-position: center;
-    height: 100%;
-    width: 100%;
     opacity: .9;
     position: relative;
     background-position: center;
@@ -671,6 +670,11 @@ color: white ;
 }
 
 /* About Styling */
+.about{
+  height: 100%;
+  width: 100%;
+}
+
 .aboutgrid{
   display:grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -680,10 +684,11 @@ color: white ;
 
 .headshot{
   text-align: center;
+  padding-left: 25%;
 }
 
 .bio{
-  padding-right: 7rem;
+  padding-right: 25%;
   padding-top: 1.3rem;
 }
 
@@ -714,7 +719,7 @@ color: white ;
 }
 
 .skills{
-  margin-left: 5rem;
+  margin-left: 10rem;
   padding-top: 1.5rem;
 }
 
