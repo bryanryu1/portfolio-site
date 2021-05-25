@@ -37,6 +37,8 @@ const Portfolio = () => (
               <ul>
                 <li>HTML5</li>
                 <li>CSS</li>
+                <li>Gatsby</li>
+                <li>Netlify</li>
               </ul>
             </div>
             <div className="proficiency">Back-End:</div>
@@ -51,7 +53,12 @@ const Portfolio = () => (
               <ul>
                 <li>AWS (Fundamental)</li>
                 <li>PostgreSQL</li>
+                <li>Tensorflow</li>
+                <li>Keras</li>
                 <li>Git</li>
+              </ul>
+              <ul>
+                <li>Jest</li>
                 <li>Mocha</li>
                 <li>Chai</li>
               </ul>
