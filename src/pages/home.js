@@ -37,7 +37,7 @@ const Home = () => {
           Hello, I'm Bryan.
         </h1>
         <Typist.Delay ms={900} />
-        <p>I am a Fullstack Software Engineer and Philosopher.</p>
+        <p>I am currently working at Connatix.</p>
         <p>
           While you're here, you can read information{" "}
           <Link className="home-text" to="/#about">
