@@ -17,7 +17,6 @@ function useWindowSize() {
 
 const Home = () => {
   const [width, height] = useWindowSize()
-
   return (
     <div
       style={{

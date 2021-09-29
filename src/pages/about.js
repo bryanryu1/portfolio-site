@@ -2,27 +2,8 @@ import React from "react"
 import Headshot from "../images/headshot"
 import Fade from "react-reveal/Fade"
 
-function useWindowSize() {
-  const [size, setSize] = useState([0, 0])
-  useLayoutEffect(() => {
-    function updateSize() {
-      setSize([window.innerWidth, window.innerHeight])
-    }
-    window.addEventListener("resize", updateSize)
-    updateSize()
-    return () => window.removeEventListener("resize", updateSize)
-  }, [])
-  return size
-}
-
-const About = () => {
-    const [width, height] = useWindowSize()
-
-    return(
-    <div 
-    style={{
-      height: height
-    }}>
+const About = () => (
+  <div>
     <Fade top>
       <h1 className="titles">a·bout me</h1>
     </Fade>
@@ -52,6 +33,5 @@ const About = () => {
     </Fade>
   </div>
 )
-    }
 
 export default About

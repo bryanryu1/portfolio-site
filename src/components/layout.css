@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap");
 
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font: 112.5%/1.45em 'Open Sans', sans-serif;
+  font: 112.5%/1.45em "Open Sans", sans-serif;
   box-sizing: border-box;
   overflow-y: scroll;
 }
@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -84,7 +84,7 @@ h1 {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2rem;
@@ -130,7 +130,7 @@ code,
 kbd,
 pre,
 samp {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
 }
 figure {
@@ -263,7 +263,7 @@ h2 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
@@ -279,7 +279,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -295,7 +295,7 @@ h4 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
@@ -311,7 +311,7 @@ h5 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
@@ -327,7 +327,7 @@ h6 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: inherit;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
@@ -395,7 +395,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: .3rem;
+  margin-bottom: 0.3rem;
   text-align: center;
 }
 pre {
@@ -567,7 +567,7 @@ tt,
 code {
   background-color: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -595,24 +595,24 @@ pre tt:after {
   }
 }
 
-.titles{
-  color: #1E7CD9;
+.titles {
+  color: #1e7cd9;
 }
 
 /* Header Styling */
 
-.header-bar{
-  background: #1E7CD9;
+.header-bar {
+  background: #1e7cd9;
   padding: 1.2rem;
   max-height: 70px;
   display: grid;
-  grid-template-areas: 'header-title nav';
+  grid-template-areas: "header-title nav";
   position: fixed;
   z-index: 100;
   width: 100%;
 }
 
-.header-title{
+.header-title {
   color: white;
   grid-area: header-title;
   text-decoration: none;
@@ -621,7 +621,7 @@ pre tt:after {
   align-self: center;
 }
 
-.nav{
+.nav {
   display: grid;
   grid-area: nav;
   grid-template-columns: repeat(4, auto);
@@ -629,14 +629,14 @@ pre tt:after {
   justify-items: center;
 }
 
-.header-item{
+.header-item {
   color: white;
   font-size: 24px;
   text-decoration: none;
   /* padding-left: .5rem; */
 }
 
-.burger{
+.burger {
   display: none;
   grid-area: burger;
   margin: 0 20px 0 0;
@@ -648,145 +648,143 @@ pre tt:after {
   outline: none;
 }
 
-
 /* Home Styling */
-.home-text{
-color: white ;
+.home-text {
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
 
-.home{
-    display: grid;
-    padding-top: 10rem;
-    min-height: 45rem;
-    background-image: url('../images/skyline.jpeg');
-    background-position: center;
-    opacity: .9;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.home {
+  display: grid;
+  padding-top: 10rem;
+  min-height: 45rem;
+  background-image: url("../images/skyline.jpeg");
+  background-position: center;
+  opacity: 0.9;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* About Styling */
-.about{
+.about {
   height: 100%;
   width: 100%;
 }
 
-.aboutgrid{
-  display:grid;
+.aboutgrid {
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   min-height: 25rem;
-  padding-bottom: 10rem;
 }
 
-.headshot{
+.headshot {
   text-align: center;
   padding-left: 25%;
 }
 
-.bio{
+.bio {
   padding-right: 25%;
   padding-top: 1.3rem;
 }
 
-.bioText{
+.bioText {
   text-align: justify;
 }
 
 /* Portfolio Styling */
-.portfolioDiv{
+.portfolioDiv {
   min-height: 20rem;
   padding-top: 7rem;
 }
 
-.titles{
+.titles {
   padding-top: 7rem;
   padding-bottom: 4rem;
 }
 
-.skillsGrid{
+.skillsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding-top: 3rem;
   padding-bottom: 10rem;
 }
 
-.skillHead{
+.skillHead {
   text-align: center;
 }
 
-.skills{
+.skills {
   margin-left: 10rem;
   padding-top: 1.5rem;
 }
 
-.proficiency{
+.proficiency {
   font-weight: bold;
 }
 
-.skillWrap{
+.skillWrap {
   display: inline-flex;
-  margin-top: 2rem; 
-  background-color: #9DD2FF;
+  margin-top: 2rem;
+  background-color: #9dd2ff;
   min-width: 25rem;
   margin-bottom: 2rem;
 }
 
-.skillWrap:hover{
-  background-color: #1E7CD9;
-  transform:scale(1.02)
+.skillWrap:hover {
+  background-color: #1e7cd9;
+  transform: scale(1.02);
 }
 
-.projectHead{
+.projectHead {
   text-align: center;
 }
 
-.projectWrap{
+.projectWrap {
   margin-top: 3.5rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px); 
+  grid-template-columns: repeat(auto-fit, 320px);
   justify-content: center;
   gap: 30px;
 }
 
-.project{
-  background-color: #9DD2FF;
-  transition: .3s;
+.project {
+  background-color: #9dd2ff;
+  transition: 0.3s;
 }
 
 .project:hover {
-  background-color: #1E7CD9;
-  transform:scale(1.02)
+  background-color: #1e7cd9;
+  transform: scale(1.02);
 }
 
-.postDesc{
+.postDesc {
   text-decoration: none;
   text-align: justify;
 }
 
 /* Contact Styling */
-.contact{
+.contact {
   padding-top: 7rem;
   min-height: 20rem;
 }
 
-.contactText{
+.contactText {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
   text-align: center;
 }
 
-.contactLinks{
+.contactLinks {
   justify-content: space-evenly;
   display: flex;
-  align-Items: center;
-  padding-Bottom: 10rem;
+  align-items: center;
+  padding-bottom: 10rem;
 }
 
-.active{
+.active {
   color: black;
 }
 
@@ -796,16 +794,16 @@ color: white ;
     font-size: 100%;
   }
 
-  .titles{
+  .titles {
     padding-top: 7rem;
     padding-bottom: 2rem;
   }
 
-  .header-bar{
-    grid-template-areas: 'header-title burger' 'nav nav';
+  .header-bar {
+    grid-template-areas: "header-title burger" "nav nav";
   }
 
-  .nav{
+  .nav {
     grid-template-rows: repeat(4, auto);
     grid-template-columns: none;
     grid-row-gap: 20px;
@@ -819,41 +817,41 @@ color: white ;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  .burger{
+  .burger {
     display: inline;
   }
 
-  .home{
+  .home {
     min-height: 50rem;
   }
 
-  .aboutgrid{
+  .aboutgrid {
     padding-bottom: 0rem;
   }
 
-  .bio{
+  .bio {
     padding: 0rem 2rem;
     padding-top: 3rem;
-  }  
+  }
 
-  .portfolioDiv{
+  .portfolioDiv {
     padding-top: 0rem;
   }
 
-  .skillWrap{
+  .skillWrap {
     display: inline-flex;
-    margin-top: 2rem; 
-    background-color: #9DD2FF;
+    margin-top: 2rem;
+    background-color: #9dd2ff;
     min-width: 15rem;
     margin-bottom: 2rem;
   }
 
-  .skills{
+  .skills {
     margin-left: 4rem;
     padding-top: 1.5rem;
   }
 
-  .contact{
+  .contact {
     padding-top: 0rem;
     min-height: 40rem;
   }
@@ -861,17 +859,16 @@ color: white ;
 
 /* For iPad/Other Tablet */
 @media only screen and (max-width: 1000px) {
-  .skillWrap{
+  .skillWrap {
     display: inline-flex;
-    margin-top: 2rem; 
-    background-color: #9DD2FF;
+    margin-top: 2rem;
+    background-color: #9dd2ff;
     /* min-width: 25rem; */
     margin-bottom: 2rem;
   }
 
-  .skills{
+  .skills {
     /* margin-left: 5rem; */
     padding-top: 1.5rem;
   }
-  
 }
